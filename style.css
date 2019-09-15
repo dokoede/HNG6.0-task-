@@ -6,6 +6,7 @@
 
 body {
     font-family: sans-serif;
+    background: #dfdcdc80;
 }
 
 .container {
@@ -18,16 +19,21 @@ body {
     justify-content: center;
     align-content: center;
     grid-gap: 1px;
+
+
 }
 
 /* form area  */
 .form {
-    background: lightblue;
+    background: #ffffff;
     padding: 30px;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: center;
+    box-shadow: -12px 2px 26px -17px rgba(0, 0, 0, 0.75);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
 }
 
 input {
@@ -55,6 +61,10 @@ form.form div#btns {
     border-radius: 20px;
 }
 
+form.form div#btns input.btn.register {
+    background: transparent;
+}
+
 #checkitems {
     display: flex;
     flex-direction: row;
@@ -78,4 +88,6 @@ input#remember {
 .side2 {
     /* this is the gray part of the page .... a beautiful picture goes here with some text */
     background: gray;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
