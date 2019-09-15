@@ -58,11 +58,16 @@ form.form div#btns {
 
 .form div#btns input.btn {
     padding: 10px 70px;
-    border-radius: 20px;
+    border-radius: 50px;
+    background-color: blue;
+    color:white;
+
 }
 
 form.form div#btns input.btn.register {
     background: transparent;
+    border-radius: 50px;
+    color:blue;
 }
 
 #checkitems {
