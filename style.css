@@ -1,0 +1,81 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    /* box-sizing: border-box; */
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.container {
+    display: grid;
+    width: 1000px;
+    height: 100%;
+    margin: 30px auto;
+    grid-template-columns: 450px 450px;
+    grid-template-rows: 700px;
+    justify-content: center;
+    align-content: center;
+    grid-gap: 1px;
+}
+
+/* form area  */
+.form {
+    background: lightblue;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+input {
+    margin: 10px 0;
+}
+
+#email,
+#password {
+    height: 30px;
+    border-radius: 15px;
+}
+
+form.form label {
+    padding-top: 10px;
+}
+
+form.form div#btns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.form div#btns input.btn {
+    padding: 10px 70px;
+    border-radius: 20px;
+}
+
+#checkitems {
+    display: flex;
+    flex-direction: row;
+
+    align-items: baseline;
+
+    padding: 10px
+}
+
+input#remember {
+    padding-right: 5px;
+}
+
+/* end of form area */
+/* thigns to do */
+/* remove background image to form area */
+/* add backgound color to the button and also hover effect when mouse-over */
+/* add border color for the input */
+/* make page responsive for mobile view using media query */
+
+.side2 {
+    /* this is the gray part of the page .... a beautiful picture goes here with some text */
+    background: gray;
+}
