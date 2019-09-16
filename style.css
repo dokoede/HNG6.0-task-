@@ -5,8 +5,10 @@
 }
 
 body {
-    font-family: sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
     background-image: url("Penguins.jpg"); /* @mogbonjubola*/
+    color: #4F4F4F;
 } 
 
 .container {
@@ -19,8 +21,6 @@ body {
     justify-content: center;
     align-content: center;
     grid-gap: 1px;
-
-
 }
 
 /* form area  */
@@ -41,10 +41,72 @@ input {
 }
 
 #email,
-#password {
-    height: 30px;
-    border-radius: 15px;
-}
+#password {height: 30px;
+           border-radius: 15px;
+           border: 1px solid lightgrey;
+           padding: 2px 2px 2px 10px;
+           color:#545454;
+           }
+
+/* Angela's styles start here */
+
+#email:focus {border-collapse: collapse;
+              outline:0;
+              box-shadow: 0 0 5px #D3101A;
+              font-family: 'Montserrat', sans-serif;
+              }
+
+#password:focus {border-collapse: collapse;
+                 outline:0;
+                 box-shadow: 0 0 5px #D3101A;
+                 font-family: 'Montserrat', sans-serif;
+                 }
+
+input:active {background-color: none;}
+
+input:focus {background-color: none;}
+
+.btn:focus {outline: 0;
+            background-color: #D3101A;
+            color:white;
+            font-family: 'Montserrat', sans-serif;
+            }
+
+button {color:#D3101A;
+        font-weight: bolder;
+        }
+
+.btn {padding: 5px;
+      width: 100px;
+      margin-left: 40px;
+      background-color: white;
+      border: 1px solid #D3101A;
+      border-radius: 15px;
+      outline: 0; 
+      font-family: 'Montserrat', sans-serif;
+     }
+
+.btns {display: flex;
+      flex-direction: row;
+      padding-left: 30px;
+      }
+
+#forgot-password{text-decoration: none;}
+
+#remember-me, #forgot-password {font-size: 12px;}
+
+#remember-me {margin-top: 8px;}
+
+a#forgot-password:hover {color: #D3101A;}
+
+.div-1 {display: flex;
+        flex-direction: row;
+        justify-content: center;
+        }
+
+input {font-family: 'Montserrat', sans-serif;}
+
+/*Angela's styles end --here*/
 
 form.form label {
     padding-top: 10px;
@@ -53,7 +115,7 @@ form.form label {
 form.form div#btns {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    
 }
 
 .form div#btns input.btn {
@@ -75,10 +137,9 @@ form.form div#btns input.btn.login{
 #checkitems {
     display: flex;
     flex-direction: row;
-
-    align-items: baseline;
-
-    padding: 10px
+    align-items: baseline; /*Angela */
+    padding: 10px;
+    justify-content: space-between; /*Angela */
 }
 
 input#remember {
