@@ -1,152 +1,166 @@
 * {
-    margin: 0px;
-    padding: 0px;
-    /* box-sizing: border-box; */
+  margin: 0px;
+  padding: 0px;
 }
 
+/*denis*/
+
 body {
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    background-color:#ffffff; /* Janetsomehow */
-    color: #4F4F4F;
-} 
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  background-color: #b8b7b7e7;
+  /* Janetsomehow */
+  color: #4f4f4f;
+}
 
 .container {
-    display: grid;
-    width: 1000px;
-    height: 100%;
-    margin: 30px auto;
-    grid-template-columns: 450px 450px;
-    grid-template-rows: 700px;
-    justify-content: center;
-    align-content: center;
-    grid-gap: 1px;
+  /*dennis= grid container*/
+  display: grid;
+  width: 1000px;
+  height: 100%;
+  margin: 30px auto;
+  grid-template-columns: 450px 450px;
+  grid-template-rows: 700px;
+  justify-content: center;
+  align-content: center;
+  grid-gap: 1px;
 }
 
 /* form area  */
 .form {
-    background: #ffffff;
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    box-shadow: -12px 2px 26px -17px rgba(0, 0, 0, 0.75);
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
+  /*dennis = form area*/
+  background: #ffffff;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  box-shadow: -12px 2px 26px -17px rgba(0, 0, 0, 0.75);
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
 }
 
 input {
-    margin: 10px 0;
+  /*dennis*/
+  margin: 10px 0;
+  border: 1px solid darkgreen;
 }
 
 #email,
-#password {height: 30px;
-           border-radius: 15px;
-           border: 1px solid lightgrey;
-           padding: 2px 2px 2px 10px;
-           color:#545454;
-           }
+#password {
+  height: 30px;
+  border-radius: 15px;
+  border: 1px solid darkgreen;
+  padding: 2px 2px 2px 10px;
+  color: #545454;
+}
 
-/* Angela's styles start here */
+form.form input#password {
+  margin-bottom: 0px;
+}
 
-#email:focus {border-collapse: collapse;
-              outline:0;
-              box-shadow: 0 0 5px #D3101A;
-              font-family: 'Montserrat', sans-serif;
-              }
+#email:focus {
+  /*Angela */
+  border-collapse: collapse;
+  outline: 0;
+  box-shadow: 0 0 10px darkgreen;
+}
 
-#password:focus {border-collapse: collapse;
-                 outline:0;
-                 box-shadow: 0 0 5px #D3101A;
-                 font-family: 'Montserrat', sans-serif;
-                 }
+#password:focus {
+  /*Angela */
+  border-collapse: collapse;
+  outline: 0;
+  box-shadow: 0 0 10px darkgreen;
+}
 
-input:active {background-color: none;}
+button {
+  /*Angela */
+  color: darkgreen;
+  font-weight: bolder;
+}
 
-input:focus {background-color: none;}
+div.div-2 a#forgot-password {
+  text-decoration: none;
+}
 
-.btn:focus {outline: 0;
-            background-color: #D3101A;
-            color:white;
-            font-family: 'Montserrat', sans-serif;
-            }
+#remember-me,
+#forgot-password {
+  font-size: 12px;
+}
 
-button {color:#D3101A;
-        font-weight: bolder;
-        }
+#checkitems {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  margin-bottom: 40px;
+  padding: 0;
+  justify-content: space-between;
+  /*Angela */
+}
 
-.btn {padding: 5px;
-      width: 100px;
-      margin-left: 40px;
-      background-color: white;
-      border: 1px solid #D3101A;
-      border-radius: 15px;
-      outline: 0; 
-      font-family: 'Montserrat', sans-serif;
-     }
+div#checkitems div.div-1 input#Remember {
+  margin-right: 5px;
+}
 
-.btns {display: flex;
-      flex-direction: row;
-      padding-left: 30px;
-      }
+form.form div#checkitems div.div-1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+}
 
-#forgot-password{text-decoration: none;}
+input {
+  font-family: "Montserrat", sans-serif;
+  /*Angela */
+}
 
-#remember-me, #forgot-password {font-size: 12px;}
-
-#remember-me {margin-top: 8px;}
-
-a#forgot-password:hover {color: #D3101A;}
-
-.div-1 {display: flex;
-        flex-direction: row;
-        justify-content: center;
-        }
-
-input {font-family: 'Montserrat', sans-serif;}
-
-/*Angela's styles end --here*/
+form.form h1 {
+  /*dennis*/
+  color: darkgreen;
+  margin-bottom: 10px;
+}
 
 form.form label {
-    padding-top: 10px;
+  /*dennis*/
+  padding-top: 10px;
+  color: darkgreen;
 }
 
 form.form div#btns {
-    display: flex;
-    flex-direction: row;
-    
+  /*dennis*/
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-.form div#btns input.btn {
-    padding: 10px 70px;
-    border-radius: 20px;
+.form div#btns button.btn {
+  /*dennis*/
+  padding: 10px 70px;
+  border-radius: 20px;
 }
 
-form.form div#btns input.btn.register {
-    background: transparent;
-    border: 1px solid blue;
-} /* @mogbonjubola */
-
-form.form div#btns input.btn.login{
-    background: blue;
-    color:white;
-
-} /* @mogbonjubola */
-
-#checkitems {
-    display: flex;
-    flex-direction: row;
-    align-items: baseline; /*Angela */
-    padding: 10px;
-    justify-content: space-between; /*Angela */
+form.form div#btns button.btn.register {
+  /*dennis*/
+  background: transparent;
+  border: 1px solid darkgreen;
 }
 
-input#remember {
-    padding-right: 5px;
+/* @mogbonjubola */
+
+form.form div#btns button.btn.login {
+  background: rgb(32, 109, 32);
+  color: white;
 }
 
-/* end of form area */
+form.form div#btns button.btn.login:hover {
+  background: rgb(4, 66, 4);
+}
+
+form.form div#btns button.btn.register:hover {
+  background: rgb(4, 66, 4);
+  color: white;
+}
+
 /* thigns to do */
 /* remove background image to form area */
 /* add backgound color to the button and also hover effect when mouse-over */
@@ -154,8 +168,8 @@ input#remember {
 /* make page responsive for mobile view using media query */
 
 .side2 {
-    /* this is the gray part of the page .... a beautiful picture goes here with some text */
-    background: gray;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
+  /* this is the gray part of the page .... a beautiful picture goes here with some text */
+  background: gray;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
