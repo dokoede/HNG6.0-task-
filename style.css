@@ -20,7 +20,7 @@ body {
   height: 100%;
   margin: 30px auto;
   grid-template-columns: 450px 450px;
-  grid-template-rows: 700px;
+  grid-template-rows: 600px;
   justify-content: center;
   align-content: center;
   grid-gap: 1px;
@@ -63,7 +63,7 @@ form.form input#password {
   /*Angela */
   border-collapse: collapse;
   outline: 0;
-  box-shadow: 0 0 10px darkgreen;
+  box-shadow: 0 0 10px darkgreen; 
 }
 
 #password:focus {
@@ -150,6 +150,7 @@ form.form div#btns button.btn.register {
 form.form div#btns button.btn.login {
   background: rgb(32, 109, 32);
   color: white;
+  border: 1px solid rgb(32, 109, 32); /*taofeeq_deru*/
 }
 
 form.form div#btns button.btn.login:hover {
