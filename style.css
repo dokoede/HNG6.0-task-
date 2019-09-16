@@ -6,8 +6,8 @@
 
 body {
     font-family: sans-serif;
-    background: #dfdcdc80;
-}
+    background-image: url("Penguins.jpg"); /* @mogbonjubola*/
+} 
 
 .container {
     display: grid;
@@ -63,7 +63,14 @@ form.form div#btns {
 
 form.form div#btns input.btn.register {
     background: transparent;
-}
+    border: 1px solid blue;
+} /* @mogbonjubola */
+
+form.form div#btns input.btn.login{
+    background: blue;
+    color:white;
+
+} /* @mogbonjubola */
 
 #checkitems {
     display: flex;
