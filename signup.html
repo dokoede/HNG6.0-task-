@@ -14,11 +14,14 @@
 <body>
   <div class="container">
     <form class="form" action="#" id="form">
-      <h1><strong>Create Your Account</strong></h1><br> <!-- @mogbonjubola -->
-      <label for="email"><strong>Name</strong></label>
-      <input type="text" name="Text" id="email" placeholder="Enter Your Name" />
+      <h1><strong>Create Your Account</strong></h1><br>
+      
+      <label for="name"><strong>Name</strong></label>
+      <input type="text" name="name" id="name" placeholder="Enter Your Name" maxlength="40" required />
+      
+      
       <label for="email"><strong>E-mail</strong></label>
-      <input type="text" name="email" id="email" placeholder="Enter Your Email" />
+      <input type="email" name="email" id="email" placeholder="Enter Your Email" required />
       <br />
 
 
@@ -30,15 +33,15 @@
       </div>
 
       <label for="password"><strong>Password</strong></label>
-      <input type="password" id="password" placeholder="Enter Your Password" />
+      <input type="password" id="password" placeholder="Enter Your Password" required />
 
       <label for="phone"><strong>Phone</strong></label>
-      <input type="tel" id="phone" placeholder="Enter Your phone" />
+      <input type="tel" id="phone" placeholder="Enter Your phone" required />
 
 
 
       <div id="btns" class="btns">
-        <button class="btn register" type="button" value="Register">Sign
+        <button class="btn register" type="submit" value="Register">Sign
           Up</button>
         <button onClick="location.href='index.html'" class="btn login" type="button" value="Login">Login</button>
       </div>

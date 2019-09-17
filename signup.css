@@ -48,7 +48,8 @@ input {
 
 #email,
 #password,
-#phone {
+#phone,
+#name {
   height: 30px;
   border-radius: 15px;
   border: 1px solid darkgreen;
