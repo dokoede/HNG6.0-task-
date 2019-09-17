@@ -11,7 +11,6 @@ body {
   background-color: #b8b7b7e7;
   /* Janetsomehow */
   color: #4f4f4f;
-  /* font-size: 100%; */
 }
 
 .container {
@@ -48,7 +47,9 @@ input {
 }
 
 #email,
-#password {
+#password,
+#phone,
+#name {
   height: 30px;
   border-radius: 15px;
   border: 1px solid darkgreen;
@@ -60,7 +61,7 @@ form.form input#password {
   margin-bottom: 0px;
 }
 
-#email:focus {
+#email:focus, #phone:focus, #name:focus {
   /*Angela */
   border-collapse: collapse;
   outline: 0;
@@ -118,12 +119,12 @@ input {
 form.form h1 {
   /*dennis*/
   color: darkgreen;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 form.form label {
   /*dennis*/
-  padding-top: 10px;
+  padding-top: 15px;
   color: darkgreen;
 }
 
@@ -132,6 +133,7 @@ form.form div#btns {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-top: 20px;
 }
 
 .form div#btns button.btn {
@@ -158,14 +160,12 @@ form.form div#btns button.btn.login {
 form.form div#btns button.btn.login:hover {
   background: rgb(4, 66, 4);
   cursor: pointer;
-  /*taofeeq_deru*/
 }
 
 form.form div#btns button.btn.register:hover {
   background: rgb(4, 66, 4);
   color: white;
   cursor: pointer;
-  /*taofeeq_deru*/
 }
 
 /* thigns to do */
@@ -174,7 +174,7 @@ form.form div#btns button.btn.register:hover {
 /* add border color for the input */
 /* make page responsive for mobile view using media query */
 
-.side2 {
+html body div.container div.side2 {
   /* this is the gray part of the page .... a beautiful picture goes here with some text */
   background: url(https://res.cloudinary.com/dthwqcdxe/image/upload/v1568650329/login_image_2_c9pbxa.jpg);
   border-top-right-radius: 20px;
@@ -184,15 +184,15 @@ form.form div#btns button.btn.register:hover {
   background-size: cover;
 }
 
-.side2 img {
-  /*taofeeq_deru*/
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
-  height: 600px;
-  width: 450px;
+
+/* sign-up style */
+form#form.form div#gender {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+
 }
 
-/*responsiveness by taofeeq_deru*/
 @media screen and (max-width: 800px) {
 
   /*for screens snmaller than 800px*/
@@ -225,7 +225,7 @@ form.form div#btns button.btn.register:hover {
     display: grid;
     width: 400px;
     grid-template-columns: 300px;
-    grid-template-rows: 500px;
+    grid-template-rows: 550px;
     margin: 50px auto;
   }
 
@@ -245,7 +245,7 @@ form.form div#btns button.btn.register:hover {
     display: grid;
     width: 300px;
     grid-template-columns: 300px;
-    grid-template-rows: 500px;
+    grid-template-rows: 550px;
   }
 }
 
@@ -256,25 +256,16 @@ form.form div#btns button.btn.register:hover {
     font-size: 70%;
   }
 
+  /* modified responsivenes for signup page  */
   .container {
     display: grid;
     width: 280px;
+
     grid-template-columns: 280px;
-    grid-template-rows: 420px;
-  }
-
-  #checkitems {
-    display: flex;
-    flex-direction: column-reverse;
-    margin-top: 20px;
-  }
-
-  #Remember,
-  #remember-me {
-    margin-top: 20px;
+    grid-template-rows: 500px;
   }
 
   #btns {
-    margin-top: -40px;
+    margin-top: 20px;
   }
 }
