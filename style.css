@@ -173,9 +173,12 @@ form.form div#btns button.btn.register:hover {
 
 .side2 {
   /* this is the gray part of the page .... a beautiful picture goes here with some text */
-  background: gray;
+  background: url(https://res.cloudinary.com/dthwqcdxe/image/upload/v1568650329/login_image_2_c9pbxa.jpg);
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .side2 img{
