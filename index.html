@@ -32,7 +32,7 @@
       </div>
       <br>
       <div id="btns" class="btns">
-        <button class="btn register" href="#" value="Register">Sign up</button>
+        <button onClick="location.href='signup.html'" class=" btn register" href="#" value="Register">Sign up</button>
         <button class="btn login" type="submit" value="Login" id="linkButton">Login</button>
       </div>
     </form>
@@ -65,11 +65,12 @@
         url: 'api/login.php',
         // contentType: 'application/json',
         data: data, // access in body
-        success: function() {
+        success: function () {
           toastr.success('Sucessfully logged in'), document.getElementById("linkButton").disabled = false
         },
-        error: function() {
-          toastr.error('Please, Try again. An error occured'),document.getElementById("linkButton").disabled = false
+        error: function () {
+          toastr.error('Please, Try again. An error occured'), document.getElementById("linkButton")
+            .disabled = false
         }
       });
     });
