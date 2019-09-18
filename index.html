@@ -17,10 +17,10 @@
     <form class="form" action="" id="loginform">
       <h1><strong>Login to Your Account</strong></h1><br> <!-- @mogbonjubola -->
       <label for="email"><strong>E-mail</strong></label> <!-- @mogbonjubola -->
-      <input type="text" name="email" id="email" placeholder="Enter Your Email" />
+      <input type="text" name="email" id="email" placeholder="Enter Your Email"  required/>
       <br />
       <label for="password"><strong>Password</strong></label>
-      <input type="password" name="password" id="password" placeholder="Enter Your Password" />
+      <input type="password" name="password" id="password" placeholder="Enter Your Password" required/>
       <div id="checkitems">
           <div class="div-1">
             <input type="checkbox" name="Remember Me" id="Remember"/><p id="remember-me">Remember Me</p>
@@ -41,8 +41,6 @@
       <!--Janetsomehow-->
     </div>
   </div>
-  
-  
   <script src="script.js"></script>
 
   <!-- App js -->
@@ -70,13 +68,13 @@
         success: function () {
           toastr.success('Sucessfully logged in'), document.getElementById("linkButton").disabled = false
         },
-        error: function () {
-          toastr.error('Please, Try again. An error occured'), document.getElementById("linkButton")
-            .disabled = false
+        error: function() {
+          toastr.error('Invalid Credentials'),document.getElementById("linkButton").disabled = false
         }
       });
     });
   </script>
+  
 </body>
 
 </html>
