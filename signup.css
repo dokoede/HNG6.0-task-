@@ -75,6 +75,19 @@ form.form input#password {
   box-shadow: 0 0 10px darkgreen;
 }
 
+#name:focus {
+  border-collapse: collapse;
+  outline: 0;
+  box-shadow: 0 0 10px darkgreen;
+}
+
+#phone:focus {
+
+  border-collapse: collapse;
+  outline: 0;
+  box-shadow: 0 0 10px darkgreen;
+}
+
 button {
   /*Angela */
   color: darkgreen;
@@ -85,31 +98,7 @@ div.div-2 a#forgot-password {
   text-decoration: none;
 }
 
-#remember-me,
-#forgot-password {
-  font-size: 12px;
-}
 
-#checkitems {
-  display: flex;
-  flex-direction: row;
-  align-items: baseline;
-  margin-bottom: 40px;
-  padding: 0;
-  justify-content: space-between;
-  /*Angela */
-}
-
-div#checkitems div.div-1 input#Remember {
-  margin-right: 5px;
-}
-
-form.form div#checkitems div.div-1 {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: baseline;
-}
 
 input {
   font-family: "Montserrat", sans-serif;
@@ -147,7 +136,7 @@ form.form div#btns button.btn.register {
   border: 1px solid darkgreen;
 }
 
-/* @mogbonjubola */
+
 
 form.form div#btns button.btn.login {
   background: rgb(32, 109, 32);
@@ -181,6 +170,13 @@ html body div.container div.side2 {
   background-size: cover;
 }
 
+.side2 img {
+  /*taofeeq_deru*/
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  height: 600px;
+  width: 450px;
+}
 
 /* sign-up style */
 form#form.form div#gender {

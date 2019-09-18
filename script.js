@@ -16,15 +16,15 @@ function thisFunction() {
   document.getElementById("email").style.backgroundColor = "rgba(255, 255, 255, 0.5)"; //reduces opacity of email
   document.getElementById("password").style.backgroundColor = "rgba(255, 255, 255, 1)"; //maintains opacity of password input
 }
-window.addEventListener("click", function(event) { //return opacity of form to 1 when you click outside email or password
-  if (event.target.matches("#email")) { 
+window.addEventListener("click", function (event) { //return opacity of form to 1 when you click outside email or password
+  if (event.target.matches("#email")) {
     return myFunction; //if email is clicked, run myFunction
   } else if (event.target.matches("#password")) {
     return thisFunction; //if password is clicked, run thisFunction
-  } else{
+  } else {
     document.getElementById("content").style.backgroundColor = "rgba(255, 255, 255, 1)"; //else, make the whole content opaque
   }
-})
+});
 eMail.addEventListener("blur", thatFunction); //if email loses focus, run thatFunction
 passWord.addEventListener("blur", thatFunction); //if password loses focus, run thatFunction
 function thatFunction() {
