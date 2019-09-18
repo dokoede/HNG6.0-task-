@@ -1,11 +1,11 @@
 <?php
-$username = $_POST['username'];
-$email = $_POST['email'];
-$gender = $_POST['gender'];
-$password = $_POST['password'];
-$phone = $_POST['phone'];
+$u_username = $_POST['username'];
+$u_email = $_POST['email'];
+$u_gender = $_POST['gender'];
+$u_password = $_POST['password'];
+$u_phone = $_POST['phone'];
 
-if (!empty($username) || !empty($email) || !empty($gender) || !empty($password) || !empty($phone)) {
+if (!empty($u_username) || !empty($u_email) || !empty($u_gender) || !empty($u_password) || !empty($u_phone)) {
     $host = "localhost";
     $dbusername = "root";
     $dbpassword = "";
